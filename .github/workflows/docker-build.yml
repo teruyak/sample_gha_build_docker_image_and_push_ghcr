@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      packages: write # GRCR push用
+      packages: write # GHCR push用
 
     steps:
       - name: Checkout repository

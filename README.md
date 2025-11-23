@@ -1,0 +1,3 @@
+# リポジトリ概要
+
+dockerイメージをbuildし、GHCRにpushするGitHub Actionsのサンプル
