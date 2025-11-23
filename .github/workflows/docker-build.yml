@@ -33,3 +33,8 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/sample_gha_build_image:${{ github.event.inputs.tag }}
+
+      - name: show image info in annotation
+        run: |
+          IMAGE_URL="ghcr.io/${{ github.repository_owner }}/my-sample:${{ github.event.inputs.tag }}"
+          echo "::notice title=Docker image pushed (tag:${{ github.event.inputs.tag }})::$IMAGE_URL"
